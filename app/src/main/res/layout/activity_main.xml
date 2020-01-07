@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="SIGNUP to Request Rainwater Harvesting System.\nOr to Register as a Provider"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:text="signup"
+        android:textColor="@drawable/login_btn"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/signupbtn"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="LOGIN AS"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Vendor"
+        android:textColor="@drawable/login_btn"
+        android:id="@+id/loginbtn"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="govrnment official"
+        android:textColor="@drawable/login_btn"
+        android:id="@+id/loginbtngov"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Continue without logging in "
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Guest"
+        android:textColor="@drawable/login_btn"
+        android:id="@+id/guestbtn"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
