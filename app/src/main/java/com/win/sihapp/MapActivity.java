@@ -123,9 +123,48 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback,
         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
         mCurrLocationMarker = mMap.addMarker(markerOptions);
 
-        //move map camera
+
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
+
+        //Police Station Kothrud Marker
+        Marker m1 = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.501, 73.801))
+                .anchor(0.5f, 0.5f)
+                .title("Police Station,Kothrud")
+                .snippet("")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+
+        Marker m2 = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.561, 73.80))
+                .anchor(0.5f, 0.5f)
+                .title("Kothrud Post Office")
+                .snippet("")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+
+        Marker m3 = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.525, 73.873))
+                .anchor(0.5f, 0.5f)
+                .title("Central Building")
+                .snippet("")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+
+        Marker m4 = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.542, 73.811))
+                .anchor(0.5f, 0.5f)
+                .title("NCL Main Building")
+                .snippet("")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+
+        Marker m5 = mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(18.529, 73.852))
+                .anchor(0.5f, 0.5f)
+                .title("PMC Education Department")
+                .snippet("")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+
+
 
         //stop location updates
         if (mGoogleApiClient != null) {
